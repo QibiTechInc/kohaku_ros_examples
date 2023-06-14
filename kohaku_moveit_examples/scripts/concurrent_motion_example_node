@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import rospy
+from kohaku_moveit_examples.concurrent_motion_example_node import ConcurrentMotionExampleNode
+
+try:
+    this_node = ConcurrentMotionExampleNode()
+    this_node.run()
+except rospy.ROSInterruptException:
+    pass

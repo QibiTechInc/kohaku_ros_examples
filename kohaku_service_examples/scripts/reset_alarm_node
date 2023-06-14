@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import rospy
+from kohaku_service_examples.kohaku_reset_alarm_node import ResetAlarmExampleNode
+
+try:
+    this_node = ResetAlarmExampleNode()
+    this_node.run()
+except rospy.ROSInterruptException:
+    pass

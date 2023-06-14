@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import rospy
+from kohaku_service_examples.kohaku_enable_zerog_node import EnableZeroGExampleNode
+
+try:
+    this_node = EnableZeroGExampleNode()
+    this_node.run()
+except rospy.ROSInterruptException:
+    pass

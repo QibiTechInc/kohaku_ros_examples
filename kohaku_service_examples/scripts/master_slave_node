@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import rospy
+from kohaku_service_examples.kohaku_master_slave_node import MasterSlaveNode
+
+try:
+    this_node = MasterSlaveNode()
+    rospy.on_shutdown(this_node.finalize)
+    this_node.run()
+except rospy.ROSInterruptException:
+    pass

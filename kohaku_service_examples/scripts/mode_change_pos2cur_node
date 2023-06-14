@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import rospy
+from kohaku_service_examples.kohaku_mode_change_pos2cur_node import ChangeModePos2CurExampleNode
+
+try:
+    this_node = ChangeModePos2CurExampleNode()
+    this_node.run()
+except rospy.ROSInterruptException:
+    pass

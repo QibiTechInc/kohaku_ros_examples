@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import rospy
+from kohaku_service_examples.kohaku_pick_and_place_with_grasp_node import PNPGraspNode
+
+try:
+    this_node = PNPGraspNode()
+    this_node.run()
+except rospy.ROSInterruptException:
+    pass

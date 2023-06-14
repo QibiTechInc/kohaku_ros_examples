@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import rospy
+from kohaku_service_examples.kohaku_servo_allon_node import ServoAllOnExampleNode
+
+try:
+    this_node = ServoAllOnExampleNode()
+    this_node.run()
+except rospy.ROSInterruptException:
+    pass
